@@ -10,7 +10,7 @@ const AlphabeticalNav = ({ alphabet, scrollToLetter }) => {
   };
 
   return (
-    <div className="flex bg-green-600 max-w-sm justify-center text-left px-1 rounded-lg py-1">
+    <div className="flex bg-green-300 max-w-sm justify-center text-left px-1 rounded-lg py-1">
       <div className="">
         {alphabet.split('').map((letter) => (
           <button

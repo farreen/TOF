@@ -3,7 +3,7 @@ import useRedirect from "../../../custom-hooks/common/useRedirect";
 import { blogsListData } from "../../../demo-data/blogs-data";
 import { glossaryData } from "../../../demo-data/glosarry-data";
 import AlphabeticalNav from "../../../components/common/AlphabeticalNav";
-
+import { isMobile } from 'react-device-detect'
 const colorsArray = [
   "bg-red-200",
   "bg-orange-200",
@@ -25,11 +25,15 @@ const colorsArray = [
 ];
 
 const Listing = () => {
-
+  const [isOpen, setIsOpen] = useState(false);
   const redirectTo = useRedirect();
   const redirectionHandler = (category = "") => redirectTo(`blog/${category}`);
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   const scrollContainerRef = useRef(null);
+  const toggleNav = (name = []) => {
+    setIsOpen(!isOpen);
+  };
+
   const scrollToLetter = (letter) => {
     const letterElement = document.getElementById(`letter-${letter}`);
     if (letterElement) {
@@ -45,10 +49,31 @@ const Listing = () => {
         <p className="text-3xl text-gray-700 font-bold mb-5">Glossary</p>
       </div>
       <div className="container grid grid-cols-1 md:grid-cols-1 gap-4 mx-auto p-1 m-5 ">
-        <div className="fixed z-20 right-2 bottom-0">
-          <AlphabeticalNav alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ" scrollToLetter={scrollToLetter} />
-        </div>
-        <div ref={scrollContainerRef} className="">
+
+        {
+          isMobile ?
+            <>
+              {
+                isOpen ? (
+                  <div className="fixed z-20  bottom-0" onClick={toggleNav}>
+                    <AlphabeticalNav alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ" scrollToLetter={scrollToLetter} />
+                  </div>
+                ) : (
+                  <div className="fixed z-20 right-2 bottom-0" onClick={toggleNav}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
+                      <text x="30" y="90" font-family="Arial" font-size="50" fill="black">A</text>
+                    </svg>
+                  </div>
+                )
+              }
+            </> :
+            <>
+              <div className="fixed z-20 right-2 bottom-0" onClick={toggleNav}>
+                <AlphabeticalNav alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ" scrollToLetter={scrollToLetter} />
+              </div>
+            </>
+        }
+        <div ref={scrollContainerRef}>
           {
             glossaryData?.map((glossary, index) => (
               <div data-aos="zoom-in" >
