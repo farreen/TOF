@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-const AlphabeticalNav = ({ letters, onLetterClick }) => {
+const AlphabeticalNav = ({ alphabet, scrollToLetter }) => {
+  const scrollContainerRef = useRef(null);
+
+  const handleClick = (letter) => {
+    if (scrollToLetter) {
+      scrollToLetter(letter);
+    }
+  };
+
   return (
-    <ul className="flex space-x-2 bg-slate-200">
-      {letters.map((letter, index) => (
-        <li key={index}>
+    <div className="flex bg-green-600 max-w-sm justify-center text-left px-1 rounded-lg py-1">
+      <div className="">
+        {alphabet.split('').map((letter) => (
           <button
-            className="text-blue-500 hover:text-blue-700 focus:outline-none "
-            onClick={() => onLetterClick(letter)}
+            key={letter}
+            onClick={() => handleClick(letter)}
+            className="px-1 py-0 m-1 bg-gray-200 hover:bg-gray-100 rounded text-sm"
           >
             {letter}
           </button>
-        </li>
-      ))}
-    </ul>
-   
+        ))}
+      </div>
+    </div>
   );
 };
-
 export default AlphabeticalNav;
+
