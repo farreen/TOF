@@ -14,7 +14,7 @@ const DefaultLayout = ({ props }) => {
             <Outlet></Outlet>
           </Suspense>
         </div>
-
+	
         <Footer />
       </div>
     </>
