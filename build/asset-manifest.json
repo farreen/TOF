@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11ffb06f.css",
+    "main.js": "/static/js/main.e6f8edcd.js",
+    "static/js/787.eac42d72.chunk.js": "/static/js/787.eac42d72.chunk.js",
+    "static/media/NFT.png": "/static/media/NFT.e2672a49bf9902bf6ce1.png",
+    "static/media/GreenBonds.png": "/static/media/GreenBonds.0c10a63b3e228e6a3a01.png",
+    "static/media/SustainableFinance.png": "/static/media/SustainableFinance.94ca6b0a2c4f318310a4.png",
+    "static/media/BNPL.png": "/static/media/BNPL.997d32224b72c619894c.png",
+    "static/media/AreyourcryptoSafe.png": "/static/media/AreyourcryptoSafe.791d4db75f02b9479739.png",
+    "static/media/CBDC.png": "/static/media/CBDC.4826d3ae0e88aacc3ece.png",
+    "static/media/ONDC.png": "/static/media/ONDC.83c8c56ef1388b9248eb.png",
+    "static/media/GreenClimateFunds.png": "/static/media/GreenClimateFunds.03e5d9df7bbc4966fc57.png",
+    "static/media/GreatRecession.png": "/static/media/GreatRecession.4d927985e664b37ba758.png",
+    "static/media/ESG.png": "/static/media/ESG.d0608e42126ffcae3337.png",
+    "static/media/ISO.png": "/static/media/ISO.7f05a650e971cd5ba8a0.png",
+    "static/media/P2PLending.png": "/static/media/P2PLending.2adacf7e296c82c0fd7a.png",
+    "static/media/Tokenization.png": "/static/media/Tokenization.316e567cbee0c2290e61.png",
+    "static/media/AIinFintech.png": "/static/media/AIinFintech.e591556baabaebf25a5d.png",
+    "static/media/CryptoMemes.png": "/static/media/CryptoMemes.9c2e7d7cb2d232ccc4b3.png",
+    "static/media/Neobanking.png": "/static/media/Neobanking.a82d550025291c5cc5df.png",
+    "static/media/Defi.png": "/static/media/Defi.eddb24819f63ab30fbce.png",
+    "static/media/Blockchain.png": "/static/media/Blockchain.abb25dcda3fa503c0a95.png",
+    "static/media/SDGs.png": "/static/media/SDGs.a3834138082a66351a5a.png",
+    "static/media/Web3.png": "/static/media/Web3.763284cfe9e7c31d32b7.png",
+    "static/media/carousel-img-2.png": "/static/media/carousel-img-2.284517fef255f029c859.png",
+    "static/media/carousel-img-1.png": "/static/media/carousel-img-1.afdbbf1775e05aef9dee.png",
+    "static/media/carousel-img-3.png": "/static/media/carousel-img-3.62b07adf2b875fd22b61.png",
+    "static/media/slide1.png": "/static/media/slide1.d94fd2e4f7ed671f1437.png",
+    "static/media/contactUsImg.jpeg": "/static/media/contactUsImg.e0b2ef513f3ed72497b7.jpeg",
+    "static/media/short-logo-tof.svg": "/static/media/short-logo-tof.78efcafe9b054425a33b8f019b7818e4.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.11ffb06f.css.map": "/static/css/main.11ffb06f.css.map",
+    "main.e6f8edcd.js.map": "/static/js/main.e6f8edcd.js.map",
+    "787.eac42d72.chunk.js.map": "/static/js/787.eac42d72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11ffb06f.css",
+    "static/js/main.e6f8edcd.js"
+  ]
+}
